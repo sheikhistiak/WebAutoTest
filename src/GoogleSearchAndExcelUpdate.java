@@ -72,11 +72,12 @@ public class GoogleSearchAndExcelUpdate {
                     cell = row.createCell(4);
                 }
                 cell.setCellValue(searchResults.get(0));
-                System.out.println("file saved");
+                
                 startRow += 1;
 
                 try (FileOutputStream outputStream = new FileOutputStream(excelFilePath)) {
                     workbook.write(outputStream);
+                    System.out.println("file saved");
                 }
             } catch (IOException e) {
                 e.printStackTrace();

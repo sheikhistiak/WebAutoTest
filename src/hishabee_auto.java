@@ -59,7 +59,7 @@ public class hishabee_auto {
         int esll_no = 1;
         for (WebElement card : Ecardss) {
             System.out.println("\n" + esll_no + "\n");
-            System.out.println(card.getText()); // Print or perform other actions .getText()
+            System.out.println(card.getText()); 
             if (esll_no == 2){
                 WebElement selectShopButton = card.findElement(By.xpath(".//button[text()='Edit Shop']"));
                 // Wait for a few seconds
@@ -96,7 +96,7 @@ public class hishabee_auto {
         int sl_no = 1;
         for (WebElement card : cards) {
             System.out.println("\n" + sl_no + "\n");
-            System.out.println(card.getText()); // Print or perform other actions .getText()
+            System.out.println(card.getText()); 
             // Wait for a few seconds
             Thread.sleep(2000);
             sl_no +=1;
@@ -115,7 +115,7 @@ public class hishabee_auto {
         int sll_no = 1;
         for (WebElement card : cardss) {
             System.out.println("\n" + sll_no + "\n");
-            System.out.println(card.getText()); // Print or perform other actions .getText()
+            System.out.println(card.getText()); 
             if (sll_no == 2){
                 // Wait for a few seconds
                 Thread.sleep(2000);
@@ -136,7 +136,7 @@ public class hishabee_auto {
         int s_no = 1;
         for (WebElement card : allcard) {
             System.out.println("\n" + s_no + "\n");
-            System.out.println("Information: " + card.getText()); // Print or perform other actions .getText()
+            System.out.println("Information: " + card.getText()); 
             // Wait for a few seconds
             Thread.sleep(2000);
             s_no +=1;
@@ -172,7 +172,7 @@ public class hishabee_auto {
 
             // Click the arrow button and then button
             AbuttonL.click();
-            // You can add validation or assertion code here to verify the behavior
+            
             // Wait for a few seconds
             Thread.sleep(2000);
             // Wait for a moment before proceeding to the next button
@@ -183,12 +183,12 @@ public class hishabee_auto {
             }
         }
 
-        // Find the link element by its href attribute
+        // Find the link element
         WebElement linkElement2 = driver.findElement(By.cssSelector("a[href='/create/sale/stop/one']"));
         // Click the link
         linkElement2.click();
 
-        // Find the input field using its placeholder attribute
+        // Find the input field
         WebElement gotcashField = driver.findElement(By.cssSelector("input[placeholder='Got cash']"));
         // Wait for a few seconds
         Thread.sleep(2000);
@@ -212,7 +212,7 @@ public class hishabee_auto {
 
 
 
-        // Find the link element by its href attribute
+        // Find the link element 
         WebElement linkElement3 = driver.findElement(By.cssSelector("a[href='/purchase']"));
         // Click the link
         linkElement3.click();
